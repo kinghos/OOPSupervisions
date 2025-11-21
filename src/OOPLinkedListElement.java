@@ -15,4 +15,8 @@ public class OOPLinkedListElement {
         return next;
     }
 
+    public void setNext(OOPLinkedListElement n) {
+        next = n;
+    }
+
 }

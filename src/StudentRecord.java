@@ -13,3 +13,9 @@ public final class StudentRecord {
         System.out.println("Name: " + name + ", Age: " + age + ", College: " + college);
     }
 }
+
+record Person (String name, int age, String college) {
+    public void print() {
+        System.out.println("Name: " + name + ", Age: " + age + ", College: " + college);
+    }
+}
