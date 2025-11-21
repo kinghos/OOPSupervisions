@@ -1,3 +1,3 @@
 # OOP Supervision Work
 - All class files are in `src`
-- Written answers are in `work.pdf`
+- Written answers are in `pdfs`
