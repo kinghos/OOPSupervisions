@@ -1,3 +1,5 @@
+package SV1;
+
 public class lowestCommonClass {
 
     public static int lowestCommon(long x, long y) {

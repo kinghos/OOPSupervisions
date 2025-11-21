@@ -1,3 +1,5 @@
+package SV1;
+
 class A {
     int i;
     public A (int i) {

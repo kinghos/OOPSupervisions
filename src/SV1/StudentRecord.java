@@ -1,3 +1,5 @@
+package SV1;
+
 public final class StudentRecord {
     private String name;
     private int age;
