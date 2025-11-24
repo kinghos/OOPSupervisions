@@ -23,6 +23,7 @@ public class Matrices {
         return output;
     }
 
+    // [James] coudl also have a void return type
     public static float[][] transpose(float[][] matrix) {
         for (int row = 0; row < matrix.length; row++) {
             for (int col = row + 1; col < matrix.length; col++) {

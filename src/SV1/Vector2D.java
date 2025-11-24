@@ -25,6 +25,9 @@ public class Vector2D {
         this.y = y;
     }
 
+    // [James] this signature is actually immutable (the underlying Vectors are not changed)
+    // A mutable signature would be
+    // public void add(Vector2D v)...
     public Vector2D add(Vector2D v) {
         return new Vector2D(x + v.getX(), y + v.getY());
     }

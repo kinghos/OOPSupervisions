@@ -7,6 +7,7 @@ public class OOPLinkedList {
         this.head = head;
     }
 
+    // [James] OOPLinkedListElement should not be exposed to the outside world
     public OOPLinkedListElement getHead() {
         return head;
     }

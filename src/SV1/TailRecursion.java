@@ -17,4 +17,6 @@ public class TailRecursion {
         }
         return x * pow(x, n-1);
     }
+
+    // [James] Then you actually need code to show whether these are tail-optimised or not
 }

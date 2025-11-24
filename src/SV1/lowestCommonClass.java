@@ -3,6 +3,22 @@ package SV1;
 public class lowestCommonClass {
 
     public static int lowestCommon(long x, long y) {
+
+        // [James] this is gloriously inefficient
+        //processing through Strings instead of bitwise operation is an interesting choice....
+
+        /*
+        Consider instead
+        long both = x & y;
+        int retValue = -1;
+        while (i < 64) {
+            if (((both >> i) & 1) > 0) {
+                return i;
+                break;
+            }
+        }
+         */
+
         String binStringX = Long.toBinaryString(x);
         String binStringY = Long.toBinaryString(y);
         System.out.println(binStringX + " " + binStringY);

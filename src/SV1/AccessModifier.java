@@ -6,5 +6,5 @@ public class AccessModifier {
 
 class TestClass {
     AccessModifier test = new AccessModifier();
-    test.x = 5;
+  //  test.x = 5;
 }

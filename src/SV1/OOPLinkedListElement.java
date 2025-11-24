@@ -1,5 +1,7 @@
 package SV1;
 
+
+// [James] This should be private, as we do not want to expose this implementation detail
 public class OOPLinkedListElement {
     private int val;
     private OOPLinkedListElement next;

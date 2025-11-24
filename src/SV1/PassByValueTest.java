@@ -18,5 +18,6 @@ public class PassByValueTest {
         reassignRef(test);
         System.out.println(Arrays.toString(test));
 
+        // [James] yes
     }
 }

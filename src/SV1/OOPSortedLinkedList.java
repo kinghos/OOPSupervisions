@@ -5,6 +5,7 @@ public class OOPSortedLinkedList extends OOPLinkedList {
         super(head);
     }
 
+    // [James] good
     public void add(int val) {
         OOPLinkedListElement new_item;
         OOPLinkedListElement element = getHead();
