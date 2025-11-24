@@ -40,7 +40,6 @@ Even a class without any Setters may still be mutable (depending on what the oth
 
 2.6 All Objects have a hashcode() method - and can be used as keys in a HashMap. The key thing to explain is why this is a bad idea. [Will discuss in supervision]
 
-
 3.1 Yes. Additionally, you cannot commit the horrors of C-like pointer arithmetic.
 
 3.2 Good - except that p -> null is not correct. p *is* null (it holds a special value that says this), and it does 
