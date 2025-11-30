@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MyClass implements Cloneable {
     private String mName;
     private int [] mData;
-    // Copy constructor
+
     public MyClass ( MyClass toCopy ) {
         this.mName = toCopy.mName;
         this.mData = Arrays.copyOf(toCopy.mData, toCopy.mData.length);

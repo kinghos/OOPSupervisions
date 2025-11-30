@@ -36,5 +36,20 @@ class Dog extends Animal {
 
 
 4. An ArrayList would be the better choice, as it has $O(1)$ access time to the end of the list, whereas with a LinkedList it would be $O(n)$ to access the last element, making adding and removing items from the list very inefficient
-5. `==` checks reference equality. In the first example, two seperate objects are being created, as specified by the `new` keyword. This means they do not have the same reference and hence are not equal (so false is printed). In the second example, the strings are declared with string literals. After the first string is created, the compiler recognises there is already an object storing "Hi" and instead of creating a new identical object it gives s4 the same reference as s3, hence true is printed.
-6. 
+5. `==` checks reference equality. In the first example, two seperate objects are being created, as specified by the `new` keyword. This means they do not have the same reference and hence are not (so false is printed). In the second example, the strings are declared with string literals. After the first string is created, the compiler recognises there is already an object storing "Hi" and instead of creating a new identical object it gives s4 the same reference as s3, hence true is printed.
+
+### Section 8
+1. Generics do not support primitive types due to treating all parameter types as Objects after type erasure, and primitive types are not objects. Calling T() is forbidden due to the compiler not knowing what constructor to call (since all parametrised types are treated as Objects)
+
+
+3. Wildcards allows you to specify bounds for a class, e.g. If you want a class to take a Generic, you can specify that it is either a Number or one of its children. This allows you to treat classes of related types similarly without causing problems.
+4. 1. The signature uses the same type for src and dest, but in the call doubles and numbers are being passed in. While these are related, it is not sufficient as they are not truly the same type.
+
+### Section 9
+2. Checked, as the code should be written in a way that handles the error properly, with a try catch statement. Unchecked errors are for programming/logic errors that are not the client's fault.
+
+
+4. This code is poorly written as it uses an exception as a way to obtain the answer, waiting for it to be thrown to break the flow of code. Instead, iteration should be used, or simply recursion with a base case, without using exceptions.
+
+
+6. 6 is returned, but the code in the finally block will run first.
