@@ -1,6 +1,8 @@
 package SV2;
 
 public class OOPLinkedListGeneric<T> {
+
+    // [James] head should be of type OOPLinkedListElementGeneric<T>
     private T head;
 
     public OOPLinkedListGeneric(T head) {

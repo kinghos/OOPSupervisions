@@ -40,6 +40,7 @@ public class OOPLinkedListCloneable implements Cloneable{
     @Override
     public Object clone() throws CloneNotSupportedException {
         OOPLinkedListCloneable clone = (OOPLinkedListCloneable) super.clone();
+        // [james] No, not quite. You also need to *clone* OOPLinkedListElement...you need a cloneable version of this too
         clone.head = new OOPLinkedListElement(getHead().getVal(), getHead().getNext());
         return clone;
     }

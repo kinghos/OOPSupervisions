@@ -3,6 +3,8 @@ package SV2;
 import java.util.Comparator;
 import java.util.LinkedList;
 
+// [James] Car should not implement Comparator, as that is a clear violation of SRP
+// The Comparator should be a Class in its own right
 public class Car implements Comparable<Car>, Comparator<Car> {
     private String manufacturer;
     private int age;
