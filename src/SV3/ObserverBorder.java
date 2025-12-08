@@ -13,6 +13,7 @@ class Rectangle extends Shape {
         }
     }
 
+    // [James] Is this here for a reason?
     public void drawBorder() {}
 }
 public class ObserverBorder {
@@ -21,7 +22,9 @@ public class ObserverBorder {
         ScreenRefresh.drawBorders();
     }
 
+    // Where does this get called?
     public void setSubject(Shape subject) {
         this.subject = subject;
     }
 }
+

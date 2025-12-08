@@ -5,6 +5,7 @@ public class ImmutableAssetLocation {
     private int id;
     private double latitude;
     private double longitude;
+    // [James] ths needs to be final to stop anyone changing it after object creation (otherwise it is not immutable)
     private boolean isImmutable;
 
     public class OutOfRange extends Exception {};
@@ -40,6 +41,8 @@ public class ImmutableAssetLocation {
             throw new IllegalAccessException();
         }
     }
+
+    // [James] and if this is an immutable object, then you absolutely must not allow the longitude and latitude to be changed (or indeed, any field)
 
     public void setId(int mId) {
         id = mId;

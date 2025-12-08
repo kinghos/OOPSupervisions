@@ -1,7 +1,9 @@
 package SV3;
 
+import java.util.ArrayList;
 import java.util.List;
 
+// [James] This class should be called CompositeShape. As it stands, it cannot be used outside of this package
 class ShapeGroup extends Shape {
     List<Shape> shapes;
     public void add(Shape shape) {
@@ -19,5 +21,7 @@ class ShapeGroup extends Shape {
     }
 }
 
+// [James] The question really want a main method here to deal with multiple shapes
+// (including non-ShapeGroups)
 public class CompositeShapes {
 }

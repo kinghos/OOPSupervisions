@@ -11,6 +11,8 @@ public class AssetLocation {
     public AssetLocation(String asset, int id, double latitude, double longitude) {
         this.asset = asset;
         this.id = id;
+        // [James] You do not apply your error checking on object instantiation
+        // The solution is to use call your setter methods from the constructor
         this.latitude = latitude;
         this.longitude = longitude;
     }
@@ -48,6 +50,7 @@ public class AssetLocation {
 
     public void setLongitude(double mLongitude) throws OutOfRange {
         if (mLongitude <= -180 || mLongitude >= 180) {
+            // A useful error message in the exception would be helpful to say what the valid range is
             throw new OutOfRange();
         }
         longitude = mLongitude;
