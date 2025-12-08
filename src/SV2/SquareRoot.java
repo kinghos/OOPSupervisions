@@ -11,6 +11,8 @@ public class SquareRoot {
         }
 
         double result = 1;
+        // [James] Much better than a fixed number of iterations is to have some threshold and check for the difference
+        // between successive iterations
         for (int i = 0; i < iterations; i++) {
             result = 0.5 * (result + (n / result));
         }

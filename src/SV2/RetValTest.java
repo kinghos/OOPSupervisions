@@ -3,6 +3,7 @@ package SV2;
 class ErrorSequenceEmpty extends Exception {}
 class EmailNotFound extends Exception {}
 
+// [James] Yes. The model answers further suggest that these two exceptions should inherit from a common abstract parent. That woudl seem overkill to me.
 public class RetValTest {
     public static String sEmail = "";
 
@@ -27,6 +28,7 @@ public class RetValTest {
             RetValTest.extractCamEmail("My email is rkh23@cam.ac.uk");
         }
         catch (ErrorSequenceEmpty e) {
+            // [James] Much better is to take the error message from the exception with e.getMessage(), or e.toString()
             System.out.println("Supplied string empty");
             return;
         }

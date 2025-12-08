@@ -12,6 +12,7 @@ class Ninja {
     public void ninjaMethod() {};
 }
 
+// [James] This works, but you also need Jinja to extend NinjaInterface
 public class NinjaEmployee extends Employee implements NinjaInterface {
     Ninja ninja = new Ninja();
 

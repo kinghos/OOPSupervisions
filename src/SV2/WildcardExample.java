@@ -12,6 +12,7 @@ public class WildcardExample {
         System.out.println(numbers);
     }
 
+    // [James] Nice
     public static <T> void addItems(List<? extends T> src, List<T> dest) {
         for (T t : src) {
             dest.add(t);

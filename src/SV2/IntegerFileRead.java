@@ -26,6 +26,8 @@ public class IntegerFileRead {
         }
 
         Collections.sort(nums, new PairComparator());
+        // [James] Why not the more natural:
+        // nums.sort(new PairComparator());
 
         for (int[] xs : nums) {
             System.out.println(xs[0] + ", " + xs[1]);
